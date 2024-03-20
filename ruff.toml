@@ -1,0 +1,13 @@
+line-length = 100
+
+[lint]
+select = ["ANN", "ARG", "D", "DTZ", "N", "SIM", "RET", "PTH", "UP"]
+
+[lint.per-file-ignores]
+"__init__.py" = ["D104"]
+"conftest.py" = ["D"]
+"main.py" = ["D"]
+"test_*.py" = ["D"]
+
+[lint.pydocstyle]
+convention = "google"

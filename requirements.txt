@@ -1,0 +1,11 @@
+iniconfig==2.0.0
+isort==5.13.2
+packaging==24.0
+pendulum==3.0.0
+pluggy==1.4.0
+pytest==8.1.1
+python-dateutil==2.9.0.post0
+ruff==0.3.3
+six==1.16.0
+time-machine==2.14.0
+tzdata==2024.1

@@ -1,0 +1,12 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",    
+    },
+    "[toml]": {
+        "editor.defaultFormatter": "tamasfe.even-better-toml"
+    },
+    "python.defaultInterpreterPath": ".venv/bin/python3",
+    "python.testing.pytestArgs": ["tests"],
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+}
