@@ -14,6 +14,11 @@ After that, you can activate the virtual environment:
 ```sh
 source .venv/bin/activate
 ```
+To run the project, use the following command:
+```sh
+make all
+```
+
 
 ## Features
 - Pytest (testing)
