@@ -28,7 +28,7 @@ if [ ! -d "$site_packages_dir" ]; then
 fi
 
 # Use find command to delete dependencies that don't start with 'pip'
-find "$site_packages_dir" -mindepth 1 -maxdepth 1 -type d ! -name 'pip*' -exec rm -rf {} \;
+find "$site_packages_dir" -mindepth 1 -maxdepth 1 ! -name 'pip*' -exec rm -rf {} \;
 
 # Check if the find command was successful
 if [ $? -ne 0 ]; then
