@@ -5,7 +5,7 @@ from project.helpers.datetz import DateTZ
 
 def test_invalid_timezone() -> None:
     with pytest.raises(ValueError):
-        DateTZ(tz="Invalid/Timezone").now()
+        DateTZ().now(tz="Invalid/Timezone")
 
 
 def test_utc_timezone() -> None:
@@ -14,20 +14,20 @@ def test_utc_timezone() -> None:
 
 
 def test_pacific_timezone() -> None:
-    pacific = DateTZ(tz="America/Los_Angeles").now()
+    pacific = DateTZ().now(tz="America/Los_Angeles")
     assert pytest.approx(pacific.offset_hours) == -7
 
 
 def test_mountain_timezone() -> None:
-    mountain = DateTZ(tz="America/Denver").now()
+    mountain = DateTZ().now(tz="America/Denver")
     assert pytest.approx(mountain.offset_hours) == -6
 
 
 def test_central_timezone() -> None:
-    central = DateTZ(tz="America/Chicago").now()
+    central = DateTZ().now(tz="America/Chicago")
     assert pytest.approx(central.offset_hours) == -5
 
 
 def test_eastern_timezone() -> None:
-    eastern = DateTZ(tz="America/New_York").now()
+    eastern = DateTZ().now(tz="America/New_York")
     assert pytest.approx(eastern.offset_hours) == -4
